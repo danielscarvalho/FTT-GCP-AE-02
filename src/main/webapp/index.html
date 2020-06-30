@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Hello App Engine</title>
+  </head>
+<script>
+function callApi() {
+	let ulTag = document.getElementById("lista");
+	
+	let liTag = document.createElement("li");
+	
+	fetch("/hello").then(function(response) {
+	    return response.text().then(function(text) {
+	    	liTag.innerHTML = text;
+	    	ulTag.appendChild(liTag);
+	    	console.log(text);
+	    });
+	  });
+	
+}
+</script>
+  <body>
+    <h1>Hello from the Cloud</h1>
+    <h2>Google App Engine</h1>
+    <h3>Serverless Java WEB App</h3>
+    <table>
+      <tr>
+        <td colspan="2" style="font-weight:bold;">Available Servlets:</td>        
+      </tr>
+      <tr>
+        <td><a href='/hello'>The servlet</a></td>
+      </tr>
+    </table>
+    <button onclick="callApi();">Call api</button>
+    <ul id="lista">
+    <ul>
+  </body>
+</html>
