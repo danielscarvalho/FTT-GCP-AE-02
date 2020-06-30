@@ -16,13 +16,15 @@ import com.google.appengine.repackaged.com.google.gson.Gson;
  * 1. Criar conta no Gmail
  * 2. Criar conta no Google Cloud
  * 3. Criar projeto no Google Cloud
- * 4. Criar projeto no Google App Engine
+ * 4. Liberar acesso ao Google App Engine
  * 
  * Eclipse
  * 1. Configura o runtime Java 8 ou Java 11
  * 2. Installa a ferramenta do Google cloud no Marketplace (reboot Eclipse)
  * 3. Cria projeto novo... icone do Google no Eclipse
  * 
+ * https://cloud.google.com/appengine
+ * https://cloud.google.com/appengine/docs
  * 
  */
 
