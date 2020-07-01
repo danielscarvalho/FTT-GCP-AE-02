@@ -63,7 +63,7 @@ public class HelloAppEngine extends HttpServlet {
 
   }
   
-  private int nextValue( ) {
+  private synchronized int nextValue( ) {
 	  return count++;
   }
   
